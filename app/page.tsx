@@ -2,7 +2,11 @@ import AcmeLogo from "@/app/ui/acme-logo";
 import { lusitana } from "./ui/fonts";
 import Link from "next/link";
 import Image from "next/image";
-
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Home',
+};
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
